@@ -8,17 +8,24 @@
   "files": [
     "dist"
   ],
-  "scripts": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/snehanchakravarthi"
+  },
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c"
+  },
   "author": "Snehan Charavarthi",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.11",
-    "rollup": "^4.0.2",
-    "typescript": "^5.2.2",
     "@rollup/plugin-commonjs": "^25.0.5",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
-    "rollup-plugin-dts": "^6.1.0"
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "rollup": "^4.0.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "typescript": "^5.2.2",
+    "tslib": "^2.6.2"
   }
 }
